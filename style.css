@@ -1,0 +1,4475 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f7f9fc;
+    color: #111827;
+}
+
+
+/* HEADER */
+
+header {
+    height: 75px;
+    padding: 0 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #4b5563;
+    font-size: 15px;
+}
+
+nav a:hover {
+    color: #2563eb;
+}
+
+.login-btn {
+    padding: 11px 20px;
+    border: none;
+    border-radius: 8px;
+    background: #2563eb;
+    color: white;
+    cursor: pointer;
+}
+
+
+/* HERO */
+
+.hero {
+    min-height: calc(100vh - 75px);
+    padding: 80px 8%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.tagline {
+    color: #2563eb;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 58px;
+    line-height: 1.1;
+    margin-bottom: 25px;
+}
+
+h1 span {
+    color: #2563eb;
+}
+
+.description {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #6b7280;
+    margin-bottom: 35px;
+}
+
+
+/* BUTTONS */
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.primary-btn,
+.secondary-btn {
+    padding: 14px 24px;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.primary-btn {
+    border: none;
+    background: #2563eb;
+    color: white;
+}
+
+.secondary-btn {
+    background: white;
+    border: 1px solid #d1d5db;
+    color: #111827;
+}
+
+
+/* ROADMAP CARD */
+
+.hero-card {
+    width: 360px;
+    padding: 30px;
+
+    background: white;
+    border-radius: 18px;
+
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
+}
+
+.hero-card h3 {
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.roadmap-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    padding: 16px 0;
+
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.roadmap-item span {
+    width: 35px;
+    height: 35px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #eff6ff;
+    color: #2563eb;
+
+    font-weight: bold;
+}
+
+.roadmap-item p {
+    color: #374151;
+}
+
+/* CAREER SELECTION PAGE */
+
+.career-page {
+    min-height: calc(100vh - 75px);
+    padding: 70px 8%;
+}
+
+.career-selection {
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+}
+
+.career-selection h1 {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.career-description {
+    color: #6b7280;
+    font-size: 17px;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto 45px;
+}
+
+.career-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.career-card {
+    background: white;
+    padding: 30px 25px;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.career-card:hover {
+    border-color: #2563eb;
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+}
+
+.career-icon {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.career-card h3 {
+    font-size: 19px;
+    margin-bottom: 10px;
+}
+
+.career-card p {
+    color: #1ae608;
+    line-height: 1.5;
+}
+
+.continue-btn {
+    margin-top: 40px;
+    padding: 14px 35px;
+    border: none;
+    border-radius: 8px;
+    background: #50eb25;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.continue-btn:hover {
+    background: #d81d1d;
+}
+
+.primary-btn {
+    text-decoration: none;
+    display: inline-block;
+}
+
+.primary-btn {
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* ASSESSMENT PAGE */
+
+.assessment-page {
+    min-height: calc(100vh - 75px);
+    padding: 60px 8%;
+}
+
+.assessment-container {
+    max-width: 850px;
+    margin: auto;
+}
+
+.assessment-container h1 {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.assessment-description {
+    color: #6b7280;
+    font-size: 17px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.career-selected {
+    background: #eff6ff;
+    border: 1px solid #dbeafe;
+    padding: 18px 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.career-selected span {
+    color: #6b7280;
+    margin-right: 8px;
+}
+
+.career-selected strong {
+    color: #2563eb;
+}
+
+
+/* QUESTION CARD */
+
+.question-card {
+    background: white;
+    padding: 25px;
+    margin-bottom: 20px;
+
+    border-radius: 14px;
+    border: 1px solid #e5e7eb;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.04);
+}
+
+.question-card h3 {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.option {
+    display: block;
+
+    padding: 12px 15px;
+    margin-bottom: 10px;
+
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.option:hover {
+    border-color: #2563eb;
+    background: #eff6ff;
+}
+
+.option input {
+    margin-right: 10px;
+}
+
+#submit-assessment {
+    margin-top: 15px;
+}
+
+/* ========================================
+   RESULTS PAGE - PREMIUM
+======================================== */
+
+.results-page {
+    min-height: calc(100vh - 75px);
+    padding: 80px 8%;
+}
+
+.results-container {
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+}
+
+/* STEP TAG */
+
+.results-container .tagline {
+    display: inline-block;
+    padding: 10px 18px;
+    border: 1px solid rgba(212, 175, 55, 0.35);
+    border-radius: 30px;
+    background: rgba(212, 175, 55, 0.08);
+    color: #f5d76e;
+    margin-bottom: 20px;
+}
+
+/* HEADING */
+
+.results-container h1 {
+    font-size: 52px;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.results-description {
+    color: #aeb7c9;
+    font-size: 17px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+
+/* ========================================
+   CAREER RESULT
+======================================== */
+
+.career-result {
+    display: inline-block;
+
+    padding: 14px 24px;
+
+    margin-bottom: 30px;
+
+    background: rgba(255, 255, 255, 0.05);
+
+    border: 1px solid rgba(212, 175, 55, 0.35);
+
+    border-radius: 12px;
+
+    color: #ffffff;
+}
+
+.career-result span {
+    color: #aeb7c9;
+    margin-right: 8px;
+}
+
+.career-result strong {
+    color: #f5d76e;
+}
+
+
+/* ========================================
+   SCORE CARD
+======================================== */
+
+.score-card {
+    position: relative;
+
+    overflow: hidden;
+
+    background: linear-gradient(
+        145deg,
+        rgba(255,255,255,0.08),
+        rgba(255,255,255,0.03)
+    );
+
+    padding: 45px;
+
+    border-radius: 24px;
+
+    border: 1px solid rgba(212, 175, 55, 0.3);
+
+    box-shadow:
+        0 20px 60px rgba(0,0,0,0.35),
+        inset 0 1px rgba(255,255,255,0.08);
+}
+
+.score-card > p:first-child {
+    font-size: 18px;
+    color: #aeb7c9;
+}
+
+.score {
+    font-size: 110px;
+
+    font-weight: 800;
+
+    margin: 15px 0;
+
+    background: linear-gradient(
+        90deg,
+        #f5d76e,
+        #ffffff,
+        #8b5cf6
+    );
+
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#skill-level {
+    font-size: 20px;
+
+    font-weight: bold;
+
+    color: #f5d76e;
+}
+
+
+/* ========================================
+   ROADMAP BUTTON
+======================================== */
+
+.result-actions {
+    margin-top: 30px;
+}
+
+#roadmap-button {
+    background: linear-gradient(
+        135deg,
+        #f5d76e,
+        #d4af37
+    );
+
+    color: #111827;
+
+    border: none;
+
+    padding: 15px 30px;
+
+    border-radius: 10px;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 10px 30px rgba(212,175,55,0.25);
+
+    transition: 0.3s;
+}
+
+#roadmap-button:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 15px 35px rgba(212,175,55,0.4);
+}
+
+
+/* ========================================
+   SKILL BREAKDOWN
+======================================== */
+
+.skill-results-section {
+    margin-top: 55px;
+
+    text-align: left;
+}
+
+.skill-results-section h2 {
+    font-size: 30px;
+
+    color: #ffffff;
+
+    margin-bottom: 10px;
+}
+
+.skill-results-section > p {
+    color: #aeb7c9;
+
+    margin-bottom: 25px;
+}
+
+
+/* ========================================
+   SKILL CARDS
+======================================== */
+
+.skill-result-item {
+    background: linear-gradient(
+        145deg,
+        rgba(255,255,255,0.07),
+        rgba(255,255,255,0.03)
+    );
+
+    padding: 22px;
+
+    margin-bottom: 15px;
+
+    border-radius: 15px;
+
+    border: 1px solid rgba(255,255,255,0.08);
+
+    transition: 0.3s;
+}
+
+.skill-result-item:hover {
+    border-color: rgba(212,175,55,0.45);
+
+    transform: translateY(-3px);
+}
+
+.skill-info {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 12px;
+}
+
+.skill-info strong {
+    color: #ffffff;
+
+    font-size: 17px;
+}
+
+.skill-info span {
+    font-size: 14px;
+
+    font-weight: bold;
+}
+
+
+/* SKILL LEVEL COLORS */
+
+.strong {
+    color: #4ade80;
+}
+
+.moderate {
+    color: #facc15;
+}
+
+.improvement {
+    color: #fb923c;
+}
+
+.priority {
+    color: #f87171;
+}
+
+
+/* ========================================
+   PROGRESS BAR
+======================================== */
+
+.progress-bar {
+    width: 100%;
+
+    height: 9px;
+
+    background: rgba(255,255,255,0.08);
+
+    border-radius: 20px;
+
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+
+    background: linear-gradient(
+        90deg,
+        #d4af37,
+        #f5d76e,
+        #8b5cf6
+    );
+
+    border-radius: 20px;
+
+    transition: width 1s ease;
+}
+
+/* ========================================
+   ROADMAP CARDS
+======================================== */
+
+.roadmap-step {
+    background: white;
+    padding: 25px;
+    margin: 20px 0;
+    border-radius: 15px;
+    border-left: 6px solid #2563eb;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.roadmap-step h2 {
+    color: #2563eb;
+    margin-bottom: 8px;
+}
+
+.roadmap-step h3 {
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+.roadmap-step p {
+    color: #555;
+    line-height: 1.6;
+}
+
+/* ========================================
+   SKILL GAP
+======================================== */
+
+#skill-gap {
+    margin: 30px 0;
+}
+
+#skill-gap h2 {
+    margin-bottom: 15px;
+}
+
+.skill-gap-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 15px 20px;
+    margin: 10px 0;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+/* ========================================
+   STUDY PLANNER
+======================================== */
+
+#planner-content {
+    margin-top: 30px;
+}
+
+.study-week {
+    background: white;
+    padding: 25px;
+    margin: 18px 0;
+    border-radius: 15px;
+    border-left: 6px solid #2563eb;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.study-week h2 {
+    color: #2563eb;
+    margin-bottom: 8px;
+}
+
+.study-week h3 {
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+.study-week p {
+    color: #555;
+    line-height: 1.6;
+}
+
+/* ========================================
+   PROJECTS
+======================================== */
+
+#projects-section {
+    margin-top: 40px;
+}
+
+#projects-section h2 {
+    margin-bottom: 20px;
+}
+
+.project-card {
+    background: white;
+    padding: 25px;
+    margin: 18px 0;
+    border-radius: 15px;
+    border-left: 6px solid #22c55e;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.project-card h3 {
+    color: #22c55e;
+    margin-bottom: 8px;
+}
+
+.project-card h2 {
+    margin-bottom: 8px;
+}
+
+.project-card p {
+    color: #555;
+}
+
+/* ========================================
+   CAREER READY
+======================================== */
+
+.career-ready {
+    text-align: center;
+    background: white;
+    padding: 40px 25px;
+    margin: 40px 0;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.career-ready h2 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.career-ready p {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+#restart-planner {
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 14px 28px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#restart-planner:hover {
+    background: #1d4ed8;
+}
+
+/* ========================================
+   CAREERPATH AI - PROFESSIONAL HOMEPAGE
+======================================== */
+
+/* Smooth overall appearance */
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #f8fafc;
+    color: #0f172a;
+}
+
+/* HEADER */
+header {
+    height: 76px;
+    padding: 0 7%;
+    background: rgba(255, 255, 255, 0.95);
+    border-bottom: 1px solid #e2e8f0;
+    position: relative;
+    z-index: 10;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    color: #0f172a;
+}
+
+nav {
+    gap: 34px;
+}
+
+nav a {
+    position: relative;
+    color: #475569;
+    font-size: 15px;
+    font-weight: 500;
+    transition: color 0.25s ease;
+}
+
+nav a:hover {
+    color: #2563eb;
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -7px;
+    width: 0;
+    height: 2px;
+    background: #2563eb;
+    transition: width 0.25s ease;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+/* GET STARTED BUTTON */
+.login-btn {
+    padding: 12px 22px;
+    border-radius: 9px;
+    background: #2563eb;
+    font-weight: 600;
+    box-shadow: 0 6px 18px rgba(37, 99, 235, 0.22);
+    transition: all 0.25s ease;
+}
+
+.login-btn:hover {
+    background: #1d4ed8;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(37, 99, 235, 0.3);
+}
+
+
+/* ========================================
+   HERO
+======================================== */
+
+.hero {
+    position: relative;
+    min-height: calc(100vh - 76px);
+    padding: 70px 7%;
+    overflow: hidden;
+
+    background:
+        radial-gradient(
+            circle at 80% 30%,
+            rgba(37, 99, 235, 0.10),
+            transparent 30%
+        ),
+        radial-gradient(
+            circle at 10% 80%,
+            rgba(99, 102, 241, 0.07),
+            transparent 30%
+        ),
+        #f8fafc;
+}
+
+/* Decorative background glow */
+.hero::before {
+    content: "";
+    position: absolute;
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    background: rgba(37, 99, 235, 0.05);
+    top: 10%;
+    right: 35%;
+    filter: blur(50px);
+    pointer-events: none;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 680px;
+}
+
+/* TAGLINE */
+.tagline {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    color: #2563eb;
+    font-size: 15px;
+    font-weight: 700;
+
+    background: #eff6ff;
+    border: 1px solid #dbeafe;
+
+    padding: 9px 15px;
+    border-radius: 50px;
+
+    margin-bottom: 22px;
+}
+
+/* MAIN HEADING */
+.hero h1 {
+    font-size: clamp(48px, 5.5vw, 72px);
+    line-height: 1.04;
+    letter-spacing: -2.5px;
+    font-weight: 800;
+    margin-bottom: 25px;
+    color: #0f172a;
+}
+
+.hero h1 span {
+    color: #2563eb;
+}
+
+/* DESCRIPTION */
+.description {
+    max-width: 620px;
+    font-size: 18px;
+    line-height: 1.75;
+    color: #64748b;
+    margin-bottom: 38px;
+}
+
+
+/* ========================================
+   HERO BUTTONS
+======================================== */
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.primary-btn,
+.secondary-btn {
+    padding: 15px 26px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    transition: all 0.25s ease;
+}
+
+.primary-btn {
+    background: #2563eb;
+    box-shadow: 0 8px 22px rgba(37, 99, 235, 0.22);
+}
+
+.primary-btn:hover {
+    background: #1d4ed8;
+    transform: translateY(-3px);
+    box-shadow: 0 12px 28px rgba(37, 99, 235, 0.3);
+}
+
+.secondary-btn {
+    background: white;
+    border: 1px solid #cbd5e1;
+    color: #334155;
+}
+
+.secondary-btn:hover {
+    border-color: #2563eb;
+    color: #2563eb;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(15, 23, 42, 0.06);
+}
+
+
+/* ========================================
+   ROADMAP CARD
+======================================== */
+
+.hero-card {
+    position: relative;
+    z-index: 2;
+
+    width: 370px;
+    padding: 32px;
+
+    background: rgba(255, 255, 255, 0.92);
+    border: 1px solid #e2e8f0;
+    border-radius: 22px;
+
+    box-shadow:
+        0 25px 60px rgba(15, 23, 42, 0.10),
+        0 5px 15px rgba(15, 23, 42, 0.04);
+
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.hero-card:hover {
+    transform: translateY(-7px);
+    box-shadow:
+        0 30px 70px rgba(15, 23, 42, 0.14),
+        0 8px 20px rgba(37, 99, 235, 0.08);
+}
+
+.hero-card h3 {
+    font-size: 21px;
+    font-weight: 750;
+    margin-bottom: 22px;
+    color: #0f172a;
+}
+
+.roadmap-item {
+    padding: 17px 0;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.roadmap-item:last-child {
+    border-bottom: none;
+}
+
+.roadmap-item span {
+    width: 38px;
+    height: 38px;
+
+    background: #eff6ff;
+    color: #2563eb;
+
+    border: 1px solid #dbeafe;
+
+    font-size: 13px;
+}
+
+.roadmap-item p {
+    color: #334155;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+
+/* ========================================
+   HOMEPAGE RESPONSIVE DESIGN
+======================================== */
+
+@media (max-width: 900px) {
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 60px 6%;
+    }
+
+    .hero-content {
+        max-width: 750px;
+    }
+
+    .description {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .hero-card {
+        width: min(100%, 400px);
+    }
+
+    nav {
+        gap: 18px;
+    }
+}
+
+
+@media (max-width: 650px) {
+
+    header {
+        padding: 0 5%;
+    }
+
+    .logo {
+        font-size: 21px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .login-btn {
+        padding: 10px 16px;
+        font-size: 13px;
+    }
+
+    .hero {
+        min-height: auto;
+        padding: 55px 5%;
+    }
+
+    .hero h1 {
+        font-size: 44px;
+        letter-spacing: -1.5px;
+    }
+
+    .description {
+        font-size: 16px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .primary-btn,
+    .secondary-btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero-card {
+        width: 100%;
+        padding: 25px;
+    }
+}
+
+/* ========================================
+   PREMIUM HOMEPAGE DESIGN
+======================================== */
+
+/* HEADER */
+header {
+    background: rgba(255, 255, 255, 0.92);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid #e2e8f0;
+    box-shadow: 0 4px 20px rgba(15, 23, 42, 0.04);
+}
+
+.logo {
+    color: #0B1020;
+    letter-spacing: -0.5px;
+}
+
+.logo::after {
+    content: " ✦";
+    color: #7C3AED;
+}
+
+nav a {
+    color: #475569;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #7C3AED;
+}
+
+
+/* GET STARTED BUTTON */
+.login-btn {
+    background: linear-gradient(135deg, #2563EB, #7C3AED);
+    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.25);
+    transition: 0.3s;
+}
+
+.login-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 25px rgba(124, 58, 237, 0.30);
+}
+
+
+/* HERO BACKGROUND */
+.hero {
+    position: relative;
+    overflow: hidden;
+
+    background:
+        radial-gradient(circle at 75% 35%,
+        rgba(124, 58, 237, 0.13),
+        transparent 28%),
+
+        radial-gradient(circle at 25% 60%,
+        rgba(37, 99, 235, 0.10),
+        transparent 30%),
+
+        #f8fafc;
+}
+
+
+/* DECORATIVE GLOW */
+.hero::before {
+    content: "";
+    position: absolute;
+
+    width: 300px;
+    height: 300px;
+
+    background: rgba(6, 182, 212, 0.08);
+
+    border-radius: 50%;
+
+    top: 80px;
+    right: 100px;
+
+    filter: blur(80px);
+
+    pointer-events: none;
+}
+
+
+/* HERO CONTENT */
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+
+/* TAGLINE */
+.tagline {
+    display: inline-block;
+
+    padding: 10px 18px;
+
+    border-radius: 30px;
+
+    color: #2563EB;
+
+    background: linear-gradient(
+        135deg,
+        #eff6ff,
+        #f5f3ff
+    );
+
+    border: 1px solid #dbeafe;
+
+    box-shadow: 0 5px 20px rgba(37, 99, 235, 0.08);
+
+    letter-spacing: 0.3px;
+}
+
+
+/* MAIN HEADING */
+.hero h1 {
+    color: #0B1020;
+    font-weight: 800;
+    letter-spacing: -2px;
+}
+
+.hero h1 span {
+    background: linear-gradient(
+        90deg,
+        #2563EB,
+        #7C3AED,
+        #06B6D4
+    );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    background-clip: text;
+}
+
+
+/* DESCRIPTION */
+.description {
+    color: #64748B;
+}
+
+
+/* PRIMARY BUTTON */
+.primary-btn {
+    background: linear-gradient(
+        135deg,
+        #2563EB,
+        #7C3AED
+    );
+
+    color: white;
+
+    box-shadow:
+        0 10px 25px rgba(37, 99, 235, 0.25);
+
+    transition: 0.3s;
+}
+
+.primary-btn:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 15px 30px rgba(124, 58, 237, 0.30);
+}
+
+
+/* SECONDARY BUTTON */
+.secondary-btn {
+    border: 1px solid #CBD5E1;
+    background: rgba(255, 255, 255, 0.8);
+    transition: 0.3s;
+}
+
+.secondary-btn:hover {
+    border-color: #7C3AED;
+    color: #7C3AED;
+
+    transform: translateY(-2px);
+}
+
+
+/* ROADMAP CARD */
+.hero-card {
+    position: relative;
+    z-index: 2;
+
+    background: rgba(255, 255, 255, 0.92);
+
+    border: 1px solid rgba(226, 232, 240, 0.8);
+
+    box-shadow:
+        0 25px 60px rgba(15, 23, 42, 0.12);
+
+    transition: 0.4s;
+}
+
+.hero-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 30px 70px rgba(37, 99, 235, 0.15);
+}
+
+
+/* ROADMAP TITLE */
+.hero-card h3 {
+    color: #0B1020;
+}
+
+
+/* ROADMAP ITEMS */
+.roadmap-item {
+    border-bottom: 1px solid #E2E8F0;
+}
+
+.roadmap-item span {
+    background: linear-gradient(
+        135deg,
+        #eff6ff,
+        #f5f3ff
+    );
+
+    color: #2563EB;
+
+    border: 1px solid #dbeafe;
+}
+
+.roadmap-item p {
+    color: #334155;
+    font-weight: 500;
+}
+
+
+/* SMALL HOVER EFFECT */
+.roadmap-item:hover span {
+    background: linear-gradient(
+        135deg,
+        #2563EB,
+        #7C3AED
+    );
+
+    color: white;
+}
+
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+    header {
+        padding: 0 5%;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .hero {
+        padding: 60px 5%;
+        text-align: center;
+    }
+
+    .hero-content {
+        max-width: 100%;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .hero-card {
+        width: 100%;
+        max-width: 360px;
+    }
+}
+
+/* ========================================
+   🌌 PREMIUM SPACE + GOLD THEME
+======================================== */
+
+body {
+    background:
+        radial-gradient(circle at 20% 20%, rgba(30, 60, 120, 0.35), transparent 35%),
+        radial-gradient(circle at 80% 30%, rgba(120, 70, 20, 0.18), transparent 30%),
+        radial-gradient(circle at 50% 90%, rgba(20, 40, 90, 0.3), transparent 40%),
+        #030712;
+
+    color: #f8fafc;
+}
+
+
+/* ========================================
+   HEADER
+======================================== */
+
+header {
+    background: rgba(3, 7, 18, 0.75);
+    backdrop-filter: blur(18px);
+
+    border-bottom: 1px solid rgba(212, 175, 55, 0.25);
+
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.35);
+}
+
+.logo {
+    color: #ffffff;
+}
+
+nav a {
+    color: #cbd5e1;
+}
+
+nav a:hover {
+    color: #f5d76e;
+}
+
+
+/* ========================================
+   GOLD BUTTONS
+======================================== */
+
+.login-btn,
+.primary-btn,
+#restart-planner {
+    background: linear-gradient(
+        135deg,
+        #d4af37,
+        #f5d76e,
+        #c99a2e
+    );
+
+    color: #080b12;
+
+    font-weight: 700;
+
+    box-shadow:
+        0 8px 25px rgba(212, 175, 55, 0.25);
+
+    transition: 0.3s ease;
+}
+
+.login-btn:hover,
+.primary-btn:hover,
+#restart-planner:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 12px 35px rgba(212, 175, 55, 0.45);
+}
+
+
+/* ========================================
+   HERO
+======================================== */
+
+.hero {
+    background:
+        radial-gradient(
+            circle at 70% 40%,
+            rgba(212, 175, 55, 0.08),
+            transparent 30%
+        );
+}
+
+
+/* HERO TAGLINE */
+
+.tagline {
+    color: #f5d76e;
+
+    display: inline-block;
+
+    padding: 10px 18px;
+
+    border: 1px solid rgba(212, 175, 55, 0.35);
+
+    border-radius: 30px;
+
+    background: rgba(212, 175, 55, 0.08);
+}
+
+
+/* HERO HEADING */
+
+h1 {
+    color: #ffffff;
+}
+
+h1 span {
+    background: linear-gradient(
+        90deg,
+        #d4af37,
+        #f5d76e,
+        #ffffff
+    );
+
+    background-clip: text;
+    -webkit-background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+}
+
+
+/* DESCRIPTION */
+
+.description {
+    color: #a7b0c0;
+}
+
+
+/* ========================================
+   SECONDARY BUTTON
+======================================== */
+
+.secondary-btn {
+    background: rgba(255, 255, 255, 0.04);
+
+    color: #ffffff;
+
+    border: 1px solid rgba(212, 175, 55, 0.4);
+
+    backdrop-filter: blur(10px);
+}
+
+.secondary-btn:hover {
+    background: rgba(212, 175, 55, 0.08);
+
+    border-color: #d4af37;
+}
+
+
+/* ========================================
+   GLASS CARDS
+======================================== */
+
+.hero-card,
+.career-card,
+.question-card,
+.score-card,
+.skill-result-item,
+.roadmap-step,
+.study-week,
+.project-card,
+.career-ready,
+.skill-gap-card {
+
+    background: rgba(255, 255, 255, 0.055);
+
+    backdrop-filter: blur(18px);
+
+    border: 1px solid rgba(255, 255, 255, 0.12);
+
+    box-shadow:
+        0 20px 60px rgba(0, 0, 0, 0.35);
+
+    color: #ffffff;
+}
+
+
+/* ========================================
+   ROADMAP
+======================================== */
+
+.hero-card h3 {
+    color: #ffffff;
+}
+
+.roadmap-item {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.roadmap-item span {
+    background: rgba(212, 175, 55, 0.12);
+
+    color: #f5d76e;
+
+    border: 1px solid rgba(212, 175, 55, 0.35);
+}
+
+.roadmap-item p {
+    color: #e2e8f0;
+}
+
+
+/* ========================================
+   GOLD HEADINGS
+======================================== */
+
+.roadmap-step h2,
+.study-week h2,
+.project-card h3 {
+    color: #f5d76e;
+}
+
+
+/* ========================================
+   PROGRESS BARS
+======================================== */
+
+.progress-bar {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.progress-fill {
+    background: linear-gradient(
+        90deg,
+        #c99a2e,
+        #f5d76e
+    );
+}
+
+
+/* ========================================
+   SCORE
+======================================== */
+
+.score {
+    color: #f5d76e;
+}
+
+
+/* ========================================
+   SKILL COLORS
+======================================== */
+
+.strong {
+    color: #6ee7b7;
+}
+
+.moderate {
+    color: #f5d76e;
+}
+
+.improvement {
+    color: #fb923c;
+}
+
+.priority {
+    color: #f87171;
+}
+
+
+/* ========================================
+   CAREER READY
+======================================== */
+
+.career-ready h2 {
+    color: #f5d76e;
+}
+
+.career-ready p,
+.project-card p,
+.study-week p,
+.roadmap-step p {
+    color: #a7b0c0;
+}
+
+
+/* ========================================
+   GOLD PROJECT BORDER
+======================================== */
+
+.project-card {
+    border-left: 4px solid #d4af37;
+}
+
+
+/* ========================================
+   SCROLLBAR
+======================================== */
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #030712;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #8f7428;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #d4af37;
+}
+
+/* ========================================
+   PREMIUM DARK THEME - TEXT FIX
+======================================== */
+
+body {
+    background: #050816;
+    color: #f8fafc;
+}
+
+/* Main headings */
+h1,
+h2,
+h3,
+h4 {
+    color: #f8fafc;
+}
+
+/* Hero heading */
+.hero h1 {
+    color: #ffffff;
+}
+
+/* Highlighted heading text */
+.hero h1 span {
+    background: linear-gradient(90deg, #ffd86b, #b794f6, #38bdf8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Tagline */
+.tagline {
+    color: #ffd86b;
+}
+
+/* Description */
+.description {
+    color: #cbd5e1;
+}
+
+/* Roadmap card */
+.hero-card {
+    background: rgba(15, 23, 42, 0.95);
+    border: 1px solid rgba(255, 216, 107, 0.25);
+}
+
+.hero-card h3 {
+    color: #ffffff;
+}
+
+.roadmap-item p {
+    color: #e2e8f0;
+}
+
+.roadmap-item span {
+    background: rgba(255, 216, 107, 0.12);
+    color: #ffd86b;
+    border: 1px solid rgba(255, 216, 107, 0.3);
+}
+
+/* Navigation */
+header {
+    background: rgba(3, 7, 18, 0.95);
+    border-bottom: 1px solid rgba(255, 216, 107, 0.2);
+}
+
+.logo {
+    color: #ffffff;
+}
+
+nav a {
+    color: #cbd5e1;
+}
+
+nav a:hover {
+    color: #ffd86b;
+}
+
+/* Gold buttons */
+.primary-btn,
+.login-btn {
+    background: linear-gradient(135deg, #ffd86b, #eab93f);
+    color: #111827;
+    font-weight: bold;
+    box-shadow: 0 8px 25px rgba(255, 216, 107, 0.2);
+}
+
+.primary-btn:hover,
+.login-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 30px rgba(255, 216, 107, 0.3);
+}
+
+/* Secondary button */
+.secondary-btn {
+    background: rgba(15, 23, 42, 0.8);
+    border: 1px solid rgba(255, 216, 107, 0.35);
+    color: #ffffff;
+}
+
+.secondary-btn:hover {
+    background: rgba(255, 216, 107, 0.08);
+    border-color: #ffd86b;
+}
+
+/* ========================================
+   PREMIUM BACKGROUND GLOW
+======================================== */
+
+body {
+    position: relative;
+    overflow-x: hidden;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    width: 500px;
+    height: 500px;
+    background: rgba(124, 58, 237, 0.12);
+    border-radius: 50%;
+    filter: blur(120px);
+    top: 100px;
+    left: -150px;
+    z-index: -1;
+}
+
+body::after {
+    content: "";
+    position: fixed;
+    width: 450px;
+    height: 450px;
+    background: rgba(56, 189, 248, 0.10);
+    border-radius: 50%;
+    filter: blur(120px);
+    bottom: 50px;
+    right: -150px;
+    z-index: -1;
+}
+
+/* ========================================
+   PREMIUM ANIMATIONS
+======================================== */
+
+.hero-content {
+    animation: fadeUp 0.8s ease-out;
+}
+
+.hero-card {
+    animation: floatCard 4s ease-in-out infinite;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes floatCard {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-8px);
+    }
+}
+
+/* ========================================
+   PREMIUM NAVBAR
+======================================== */
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    background: rgba(5, 8, 22, 0.82);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+
+    border-bottom: 1px solid rgba(255, 216, 107, 0.18);
+}
+
+/* Logo */
+.logo {
+    color: #ffffff;
+    letter-spacing: -0.5px;
+    transition: 0.3s ease;
+}
+
+.logo:hover {
+    color: #ffd86b;
+}
+
+/* Navigation links */
+nav a {
+    position: relative;
+    color: #cbd5e1;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ffd86b;
+}
+
+/* Gold line under nav link */
+nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+
+    width: 0;
+    height: 2px;
+
+    background: #ffd86b;
+    border-radius: 5px;
+
+    transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+/* Get Started button */
+.login-btn {
+    transition: all 0.3s ease;
+}
+
+.login-btn:hover {
+    transform: translateY(-2px) scale(1.03);
+}
+
+/* ========================================
+   PREMIUM CAREER SELECTION
+======================================== */
+
+.career-page {
+    background: transparent;
+}
+
+.career-selection h1 {
+    color: #ffffff;
+}
+
+.career-description {
+    color: #aeb8cc;
+}
+
+/* Career cards */
+.career-card {
+    position: relative;
+    overflow: hidden;
+
+    background: rgba(15, 23, 42, 0.78);
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 18px;
+
+    transition: all 0.35s ease;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+/* Glow inside card */
+.career-card::before {
+    content: "";
+    position: absolute;
+
+    width: 160px;
+    height: 160px;
+
+    background: rgba(124, 58, 237, 0.12);
+
+    border-radius: 50%;
+    filter: blur(60px);
+
+    top: -70px;
+    right: -70px;
+
+    opacity: 0;
+
+    transition: opacity 0.35s ease;
+}
+
+/* Hover */
+.career-card:hover {
+    transform: translateY(-8px);
+
+    border-color: rgba(255, 216, 107, 0.55);
+
+    box-shadow:
+        0 18px 45px rgba(0, 0, 0, 0.35),
+        0 0 25px rgba(255, 216, 107, 0.08);
+}
+
+.career-card:hover::before {
+    opacity: 1;
+}
+
+/* Icon */
+.career-icon {
+    font-size: 38px;
+    transition: transform 0.3s ease;
+}
+
+.career-card:hover .career-icon {
+    transform: scale(1.12);
+}
+
+/* Card text */
+.career-card h3 {
+    color: #ffffff;
+}
+
+.career-card p {
+    color: #aeb8cc;
+}
+
+/* Selected career */
+.career-card.selected {
+    border: 2px solid #ffd86b;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255, 216, 107, 0.10),
+            rgba(124, 58, 237, 0.10)
+        );
+
+    box-shadow:
+        0 0 30px rgba(255, 216, 107, 0.12);
+}
+
+/* Continue button */
+.continue-btn {
+    background: linear-gradient(
+        135deg,
+        #ffd86b,
+        #eab93f
+    );
+
+    color: #111827;
+    font-weight: bold;
+
+    box-shadow:
+        0 10px 25px rgba(255, 216, 107, 0.20);
+
+    transition: all 0.3s ease;
+}
+
+.continue-btn:hover {
+    background: linear-gradient(
+        135deg,
+        #ffe38a,
+        #f1c94c
+    );
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 15px 35px rgba(255, 216, 107, 0.30);
+}
+
+/* ========================================
+   PREMIUM ASSESSMENT PAGE
+======================================== */
+
+.assessment-page {
+    background: transparent;
+}
+
+.assessment-container h1 {
+    color: #ffffff;
+}
+
+.assessment-description {
+    color: #aeb8cc;
+}
+
+/* Selected career box */
+.career-selected {
+    background: rgba(255, 216, 107, 0.08);
+    border: 1px solid rgba(255, 216, 107, 0.3);
+    color: #ffffff;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.18);
+}
+
+.career-selected span {
+    color: #aeb8cc;
+}
+
+.career-selected strong {
+    color: #ffd86b;
+}
+
+/* Question cards */
+.question-card {
+    background: rgba(15, 23, 42, 0.82);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.25);
+
+    transition: all 0.3s ease;
+}
+
+.question-card:hover {
+    border-color: rgba(255, 216, 107, 0.25);
+    transform: translateY(-3px);
+}
+
+.question-card h3 {
+    color: #ffffff;
+}
+
+/* Answer options */
+.option {
+    color: #dbe4f0;
+
+    background: rgba(255, 255, 255, 0.02);
+
+    border: 1px solid rgba(255, 255, 255, 0.10);
+
+    transition: all 0.25s ease;
+}
+
+.option:hover {
+    background: rgba(255, 216, 107, 0.07);
+    border-color: rgba(255, 216, 107, 0.5);
+    transform: translateX(4px);
+}
+
+/* Radio buttons */
+.option input {
+    accent-color: #ffd86b;
+}
+
+/* Submit button */
+#submit-assessment {
+    background: linear-gradient(
+        135deg,
+        #ffd86b,
+        #eab93f
+    );
+
+    color: #111827;
+    border: none;
+
+    padding: 15px 30px;
+    border-radius: 10px;
+
+    font-weight: bold;
+    font-size: 16px;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 10px 25px rgba(255, 216, 107, 0.18);
+
+    transition: all 0.3s ease;
+}
+
+#submit-assessment:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 15px 35px rgba(255, 216, 107, 0.30);
+}
+
+/* ========================================
+   ROADMAP PAGE - PREMIUM
+======================================== */
+
+.roadmap-page {
+    min-height: calc(100vh - 75px);
+    padding: 80px 8%;
+}
+
+.roadmap-container {
+    max-width: 900px;
+    margin: auto;
+}
+
+/* HEADING */
+
+.roadmap-container .tagline {
+    display: inline-block;
+    padding: 10px 18px;
+    border: 1px solid rgba(212, 175, 55, 0.35);
+    border-radius: 30px;
+    background: rgba(212, 175, 55, 0.08);
+    color: #f5d76e;
+    margin-bottom: 20px;
+}
+
+.roadmap-container h1 {
+    font-size: 50px;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.roadmap-container > p {
+    color: #aeb7c9;
+    font-size: 17px;
+    line-height: 1.7;
+    margin-bottom: 40px;
+}
+
+/* ROADMAP STEPS */
+
+.roadmap-step {
+    position: relative;
+
+    background: linear-gradient(
+        145deg,
+        rgba(255,255,255,0.08),
+        rgba(255,255,255,0.03)
+    );
+
+    padding: 28px;
+
+    margin: 20px 0;
+
+    border-radius: 18px;
+
+    border: 1px solid rgba(255,255,255,0.08);
+
+    border-left: 5px solid #d4af37;
+
+    box-shadow: 0 10px 35px rgba(0,0,0,0.25);
+
+    transition: 0.3s;
+}
+
+.roadmap-step:hover {
+    transform: translateY(-5px);
+
+    border-color: rgba(212,175,55,0.45);
+
+    box-shadow: 0 15px 40px rgba(212,175,55,0.12);
+}
+
+.roadmap-step h2 {
+    color: #f5d76e;
+    margin-bottom: 8px;
+}
+
+.roadmap-step h3 {
+    color: #ffffff;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.roadmap-step p {
+    color: #aeb7c9;
+    line-height: 1.7;
+}
+
+/* STEP NUMBER */
+
+.roadmap-step h2::first-letter {
+    color: #f5d76e;
+}
+
+/* ROADMAP BUTTON */
+
+#planner-button {
+    margin-top: 30px;
+
+    background: linear-gradient(
+        135deg,
+        #f5d76e,
+        #d4af37
+    );
+
+    color: #111827;
+
+    border: none;
+
+    padding: 15px 30px;
+
+    border-radius: 10px;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    box-shadow: 0 10px 30px rgba(212,175,55,0.25);
+
+    transition: 0.3s;
+}
+
+#planner-button:hover {
+    transform: translateY(-3px);
+
+    box-shadow: 0 15px 35px rgba(212,175,55,0.4);
+}
+
+/* ========================================
+   STUDY PLANNER - PREMIUM
+======================================== */
+
+#planner-content {
+    margin-top: 35px;
+}
+
+/* WEEK CARDS */
+
+.study-week {
+    position: relative;
+
+    background: linear-gradient(
+        145deg,
+        rgba(255,255,255,0.08),
+        rgba(255,255,255,0.03)
+    );
+
+    padding: 28px;
+
+    margin: 20px 0;
+
+    border-radius: 18px;
+
+    border: 1px solid rgba(255,255,255,0.08);
+
+    border-left: 5px solid #d4af37;
+
+    box-shadow: 0 10px 35px rgba(0,0,0,0.25);
+
+    transition: 0.3s;
+}
+
+.study-week:hover {
+    transform: translateY(-5px);
+
+    border-color: rgba(212,175,55,0.45);
+
+    box-shadow: 0 15px 40px rgba(212,175,55,0.12);
+}
+
+.study-week h2 {
+    color: #f5d76e;
+
+    font-size: 17px;
+
+    margin-bottom: 10px;
+}
+
+.study-week h3 {
+    color: #ffffff;
+
+    font-size: 23px;
+
+    margin-bottom: 10px;
+}
+
+.study-week p {
+    color: #aeb7c9;
+
+    line-height: 1.7;
+}
+
+
+/* ========================================
+   PROJECT SECTION
+======================================== */
+
+#projects-section {
+    margin-top: 55px;
+}
+
+#projects-section h2 {
+    color: #ffffff;
+
+    font-size: 30px;
+
+    margin-bottom: 25px;
+}
+
+
+/* PROJECT CARDS */
+
+.project-card {
+    background: linear-gradient(
+        145deg,
+        rgba(255,255,255,0.07),
+        rgba(255,255,255,0.03)
+    );
+
+    padding: 25px;
+
+    margin: 18px 0;
+
+    border-radius: 18px;
+
+    border: 1px solid rgba(255,255,255,0.08);
+
+    border-left: 5px solid #8b5cf6;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+
+    border-color: rgba(139,92,246,0.5);
+
+    box-shadow: 0 15px 40px rgba(139,92,246,0.12);
+}
+
+.project-card h3 {
+    color: #f5d76e;
+
+    font-size: 15px;
+
+    margin-bottom: 8px;
+}
+
+.project-card h2 {
+    color: #ffffff;
+
+    font-size: 22px;
+
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    color: #aeb7c9;
+
+    line-height: 1.6;
+}
+
+
+/* ========================================
+   CAREER READY
+======================================== */
+
+.career-ready {
+    text-align: center;
+
+    background: linear-gradient(
+        145deg,
+        rgba(212,175,55,0.10),
+        rgba(139,92,246,0.08)
+    );
+
+    padding: 45px 30px;
+
+    margin: 55px 0 20px;
+
+    border-radius: 22px;
+
+    border: 1px solid rgba(212,175,55,0.25);
+
+    box-shadow: 0 15px 45px rgba(0,0,0,0.25);
+}
+
+.career-ready h2 {
+    color: #ffffff;
+
+    font-size: 30px;
+
+    margin-bottom: 15px;
+}
+
+.career-ready p {
+    color: #aeb7c9;
+
+    line-height: 1.7;
+
+    margin-bottom: 25px;
+}
+
+#restart-planner {
+    background: linear-gradient(
+        135deg,
+        #f5d76e,
+        #d4af37
+    );
+
+    color: #111827;
+
+    border: none;
+
+    padding: 14px 30px;
+
+    border-radius: 10px;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    box-shadow: 0 10px 30px rgba(212,175,55,0.25);
+
+    transition: 0.3s;
+}
+
+#restart-planner:hover {
+    transform: translateY(-3px);
+
+    box-shadow: 0 15px 35px rgba(212,175,55,0.4);
+}
+
+/* ========================================
+   STUDY PROGRESS
+======================================== */
+
+.study-progress {
+
+    background: linear-gradient(
+        145deg,
+        rgba(212,175,55,0.10),
+        rgba(139,92,246,0.08)
+    );
+
+    padding: 25px;
+
+    margin-bottom: 30px;
+
+    border-radius: 18px;
+
+    border: 1px solid rgba(212,175,55,0.25);
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+}
+
+
+.progress-header {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 18px;
+}
+
+
+.progress-header h2 {
+
+    color: #ffffff;
+
+    font-size: 22px;
+
+    margin-bottom: 6px;
+}
+
+
+.progress-header p {
+
+    color: #aeb7c9;
+
+    margin: 0;
+}
+
+
+#progress-percent {
+
+    color: #f5d76e;
+
+    font-size: 28px;
+}
+
+
+/* PROGRESS BAR */
+
+.planner-progress-bar {
+
+    width: 100%;
+
+    height: 10px;
+
+    background: rgba(255,255,255,0.08);
+
+    border-radius: 20px;
+
+    overflow: hidden;
+}
+
+
+.planner-progress-fill {
+
+    width: 0%;
+
+    height: 100%;
+
+    background: linear-gradient(
+        90deg,
+        #d4af37,
+        #f5d76e,
+        #8b5cf6
+    );
+
+    border-radius: 20px;
+
+    transition: width 0.5s ease;
+}
+
+
+/* WEEK NUMBER */
+
+.week-number {
+
+    color: #f5d76e;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    margin-bottom: 8px;
+}
+
+
+/* COMPLETE BUTTON */
+
+.complete-week {
+
+    margin-top: 18px;
+
+    padding: 10px 18px;
+
+    border: 1px solid rgba(212,175,55,0.4);
+
+    border-radius: 8px;
+
+    background: rgba(212,175,55,0.08);
+
+    color: #f5d76e;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.complete-week:hover {
+
+    background: #d4af37;
+
+    color: #111827;
+
+    transform: translateY(-2px);
+}
+
+
+/* COMPLETED WEEK */
+
+.study-week.completed {
+
+    border-left-color: #4ade80;
+
+    opacity: 0.85;
+}
+
+
+.study-week.completed .week-number {
+
+    color: #4ade80;
+}
+
+
+.study-week.completed .complete-week {
+
+    background: rgba(74,222,128,0.12);
+
+    border-color: rgba(74,222,128,0.4);
+
+    color: #4ade80;
+}
+
+/* =========================================
+   CAREER ORBIT DASHBOARD
+========================================= */
+
+.career-orbit-section {
+    margin-top: 70px;
+    padding: 45px 30px;
+    text-align: center;
+    border-radius: 25px;
+    background: linear-gradient(
+        145deg,
+        rgba(30, 25, 55, 0.95),
+        rgba(10, 20, 40, 0.95)
+    );
+    border: 1px solid rgba(255, 210, 70, 0.25);
+    box-shadow: 0 0 40px rgba(100, 70, 255, 0.12);
+}
+
+.career-orbit-section h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.career-orbit-section > p {
+    color: #aeb4c7;
+    margin-bottom: 35px;
+}
+
+
+/* ORBIT AREA */
+
+.orbit-dashboard {
+    position: relative;
+    width: 650px;
+    height: 650px;
+    max-width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* CENTER */
+
+.orbit-center {
+    position: absolute;
+    width: 155px;
+    height: 155px;
+    border-radius: 50%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background: radial-gradient(
+        circle,
+        #27204d,
+        #101426
+    );
+
+    border: 2px solid #f5c84c;
+
+    box-shadow:
+        0 0 20px rgba(245, 200, 76, 0.35),
+        0 0 60px rgba(110, 70, 255, 0.25);
+
+    z-index: 5;
+}
+
+.orbit-icon {
+    font-size: 24px;
+    color: #f5c84c;
+    margin-bottom: 5px;
+}
+
+.orbit-center strong {
+    font-size: 16px;
+}
+
+.orbit-center span {
+    margin-top: 8px;
+    font-size: 25px;
+    font-weight: 800;
+    color: #f5c84c;
+}
+
+.orbit-center small {
+    color: #9fa6bb;
+    font-size: 11px;
+}
+
+
+/* ORBIT RING */
+
+.orbit-ring {
+    position: absolute;
+    width: 480px;
+    height: 480px;
+    border: 1px solid rgba(245, 200, 76, 0.35);
+    border-radius: 50%;
+
+    box-shadow:
+        0 0 25px rgba(100, 70, 255, 0.08),
+        inset 0 0 25px rgba(100, 70, 255, 0.05);
+}
+
+
+/* ORBIT NODES */
+
+.orbit-node {
+    position: absolute;
+    width: 105px;
+    min-height: 85px;
+
+    padding: 12px 8px;
+
+    border-radius: 16px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(20, 25, 45, 0.95);
+
+    border: 1px solid rgba(255, 255, 255, 0.12);
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.3);
+
+    transition: 0.3s ease;
+}
+
+.orbit-node:hover {
+    transform: scale(1.08);
+    border-color: #f5c84c;
+    box-shadow:
+        0 0 25px rgba(245, 200, 76, 0.25);
+}
+
+.orbit-node span {
+    width: 27px;
+    height: 27px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 5px;
+
+    border-radius: 50%;
+
+    background: rgba(245, 200, 76, 0.12);
+    color: #f5c84c;
+
+    font-size: 13px;
+}
+
+.orbit-node strong {
+    font-size: 13px;
+}
+
+.orbit-node small {
+    color: #858ca3;
+    font-size: 10px;
+    margin-top: 3px;
+}
+
+
+/* =========================================
+   NODE POSITIONS
+========================================= */
+
+.node-1 {
+    top: -45px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.node-2 {
+    top: 60px;
+    right: -55px;
+}
+
+.node-3 {
+    bottom: 60px;
+    right: -55px;
+}
+
+.node-4 {
+    bottom: -45px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.node-5 {
+    bottom: 60px;
+    left: -55px;
+}
+
+.node-6 {
+    top: 60px;
+    left: -55px;
+}
+
+
+/* Keep hover smooth for top/bottom nodes */
+
+.node-1:hover,
+.node-4:hover {
+    transform: translateX(-50%) scale(1.08);
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 700px) {
+
+    .orbit-dashboard {
+        width: 100%;
+        height: 520px;
+    }
+
+    .orbit-ring {
+        width: 350px;
+        height: 350px;
+    }
+
+    .orbit-center {
+        width: 125px;
+        height: 125px;
+    }
+
+    .orbit-node {
+        width: 85px;
+        min-height: 70px;
+    }
+
+    .node-1 {
+        top: 5px;
+    }
+
+    .node-4 {
+        bottom: 5px;
+    }
+
+    .node-2,
+    .node-3 {
+        right: -5px;
+    }
+
+    .node-5,
+    .node-6 {
+        left: -5px;
+    }
+}
+
+/* ========================================
+   NEARBY STUDENTS MAP
+======================================== */
+
+#student-map {
+    width: 100%;
+    height: 500px;
+
+    margin-top: 35px;
+
+    border-radius: 20px;
+
+    border: 1px solid rgba(255, 216, 107, 0.25);
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.35);
+
+    overflow: hidden;
+}
+
+/* ========================================
+   STUDENT COUNT
+======================================== */
+
+.student-count {
+
+    margin-top: 30px;
+    margin-bottom: 15px;
+
+    padding: 18px 22px;
+
+    background: rgba(255, 216, 107, 0.08);
+
+    border: 1px solid rgba(255, 216, 107, 0.25);
+
+    border-radius: 14px;
+
+    color: #cbd5e1;
+
+    font-size: 16px;
+
+}
+
+.student-count strong {
+
+    color: #ffd86b;
+
+}
+
+/* ========================================
+   STUDENT COMMUNITY
+======================================== */
+
+.students-page {
+    min-height: 100vh;
+    padding: 60px 5%;
+}
+
+.students-container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.students-description {
+    max-width: 700px;
+    color: #aeb4c7;
+    font-size: 18px;
+    margin-bottom: 35px;
+}
+
+
+/* ========================================
+   STUDENT STATS
+======================================== */
+
+.student-stats {
+    display: grid;
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 18px;
+    margin-bottom: 30px;
+}
+
+.student-stat {
+    padding: 25px;
+    border-radius: 18px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255,255,255,0.07),
+            rgba(255,255,255,0.025)
+        );
+
+    border: 1px solid
+        rgba(255,255,255,0.12);
+
+    backdrop-filter: blur(12px);
+}
+
+.student-stat strong {
+    display: block;
+
+    font-size: 30px;
+
+    color: #ffd45a;
+
+    margin-bottom: 6px;
+}
+
+.student-stat span {
+    color: #b7bdcf;
+}
+
+
+/* ========================================
+   FILTERS
+======================================== */
+
+.student-filters {
+    display: flex;
+
+    gap: 14px;
+
+    margin-bottom: 22px;
+
+    flex-wrap: wrap;
+}
+
+.student-filters input,
+.student-filters select {
+
+    padding: 14px 18px;
+
+    border-radius: 12px;
+
+    border: 1px solid
+        rgba(255,255,255,0.15);
+
+    background: #111827;
+
+    color: white;
+
+    outline: none;
+
+    font-size: 15px;
+}
+
+.student-filters input {
+    flex: 1;
+    min-width: 260px;
+}
+
+.student-filters button {
+
+    padding: 14px 22px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    background: #ffd45a;
+
+    color: #111;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.student-filters button:hover {
+    transform: translateY(-2px);
+}
+
+
+/* ========================================
+   MAP CARD
+======================================== */
+
+.student-map-card {
+
+    border-radius: 22px;
+
+    overflow: hidden;
+
+    background:
+        rgba(255,255,255,0.04);
+
+    border: 1px solid
+        rgba(255,255,255,0.12);
+
+    box-shadow:
+        0 20px 60px
+        rgba(0,0,0,0.35);
+}
+
+.map-header {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 22px 26px;
+
+    background:
+        rgba(255,255,255,0.04);
+}
+
+.map-header h2 {
+    margin: 0 0 5px;
+}
+
+.map-header p {
+    margin: 0;
+
+    color: #9299ad;
+}
+
+.map-status {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    font-size: 14px;
+
+    color: #bfc5d4;
+}
+
+.status-dot {
+
+    width: 9px;
+    height: 9px;
+
+    border-radius: 50%;
+
+    background: #35d07f;
+
+    box-shadow:
+        0 0 12px
+        rgba(53,208,127,0.8);
+}
+
+
+/* ========================================
+   MAP
+======================================== */
+
+#student-map {
+
+    width: 100%;
+
+    height: 560px;
+
+    background: #101522;
+}
+
+
+/* ========================================
+   COMMUNITY INFO
+======================================== */
+
+.community-info {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 18px;
+
+    margin-top: 25px;
+}
+
+.community-info > div {
+
+    display: flex;
+
+    gap: 15px;
+
+    padding: 22px;
+
+    border-radius: 16px;
+
+    background:
+        rgba(255,255,255,0.04);
+
+    border: 1px solid
+        rgba(255,255,255,0.08);
+}
+
+.community-info span {
+    font-size: 28px;
+}
+
+.community-info strong {
+    display: block;
+
+    margin-bottom: 5px;
+}
+
+.community-info p {
+
+    margin: 0;
+
+    color: #949bad;
+
+    font-size: 14px;
+
+    line-height: 1.5;
+}
+
+
+/* ========================================
+   FINAL MESSAGE
+======================================== */
+
+.community-ready {
+
+    text-align: center;
+
+    margin-top: 35px;
+
+    padding: 35px;
+
+    border-radius: 20px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255,212,90,0.08),
+            rgba(100,80,255,0.08)
+        );
+
+    border: 1px solid
+        rgba(255,255,255,0.1);
+}
+
+.community-ready p {
+    color: #aeb4c7;
+}
+
+
+/* ========================================
+   MAP POPUP
+======================================== */
+
+.student-popup h3 {
+
+    margin: 0 0 6px;
+
+    font-size: 16px;
+}
+
+.student-popup p {
+
+    margin: 4px 0;
+
+    color: #555;
+}
+
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 768px) {
+
+    .student-stats {
+
+        grid-template-columns: 1fr;
+    }
+
+    .community-info {
+
+        grid-template-columns: 1fr;
+    }
+
+    #student-map {
+
+        height: 450px;
+    }
+
+    .map-header {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 12px;
+    }
+
+}
+
+/* ========================================
+   STEP 6 - STUDY PLANNER
+======================================== */
+
+.weeks-container {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    margin-top: 35px;
+}
+
+
+/* WEEK CARD */
+
+.study-week-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 28px 32px;
+
+    border: 1px solid rgba(255, 215, 80, 0.25);
+
+    border-left: 5px solid #f5c542;
+
+    border-radius: 20px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(31, 27, 54, 0.95),
+            rgba(17, 28, 43, 0.95)
+        );
+
+    cursor: pointer;
+
+    transition:
+        transform 0.25s ease,
+        border-color 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+
+.study-week-card:hover {
+
+    transform: translateY(-4px);
+
+    border-color: #f5c542;
+
+    box-shadow:
+        0 12px 35px rgba(0, 0, 0, 0.3);
+
+}
+
+
+.week-card-left {
+    flex: 1;
+}
+
+
+.week-number,
+.detail-week-number {
+
+    display: inline-block;
+
+    color: #f5c542;
+
+    font-weight: 800;
+
+    font-size: 14px;
+
+    letter-spacing: 1px;
+
+    margin-bottom: 8px;
+
+}
+
+
+.study-week-card h3 {
+
+    margin: 4px 0 10px;
+
+    color: #ffffff;
+
+    font-size: 24px;
+
+}
+
+
+.study-week-card p {
+
+    margin: 0;
+
+    color: #aeb5c7;
+
+    line-height: 1.6;
+
+    max-width: 800px;
+
+}
+
+
+.week-card-right {
+
+    margin-left: 25px;
+
+}
+
+
+.week-status {
+
+    display: inline-block;
+
+    padding: 11px 18px;
+
+    border-radius: 12px;
+
+    border: 1px solid rgba(245, 197, 66, 0.4);
+
+    color: #f5c542;
+
+    font-weight: 700;
+
+    white-space: nowrap;
+
+}
+
+
+/* COMPLETED WEEK */
+
+.study-week-card.completed {
+
+    border-left-color: #42d392;
+
+}
+
+
+.study-week-card.completed .week-status {
+
+    color: #42d392;
+
+    border-color: rgba(66, 211, 146, 0.4);
+
+}
+
+
+/* ========================================
+   WEEK DETAIL
+======================================== */
+
+.week-detail {
+
+    margin-top: 30px;
+
+}
+
+
+.back-to-weeks {
+
+    border: 1px solid rgba(245, 197, 66, 0.5);
+
+    background: transparent;
+
+    color: #f5c542;
+
+    padding: 12px 20px;
+
+    border-radius: 10px;
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    margin-bottom: 25px;
+
+}
+
+
+.back-to-weeks:hover {
+
+    background: rgba(245, 197, 66, 0.1);
+
+}
+
+
+.week-detail-header {
+
+    padding: 30px;
+
+    border-radius: 20px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(36, 30, 61, 0.95),
+            rgba(18, 31, 48, 0.95)
+        );
+
+    border: 1px solid rgba(245, 197, 66, 0.25);
+
+    margin-bottom: 25px;
+
+}
+
+
+.week-detail-header h2 {
+
+    margin: 5px 0 12px;
+
+    color: #ffffff;
+
+    font-size: 32px;
+
+}
+
+
+.week-detail-header p {
+
+    color: #adb5c7;
+
+    line-height: 1.7;
+
+    margin: 0;
+
+}
+
+
+/* ========================================
+   DAILY PLAN
+======================================== */
+
+.daily-plan {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 18px;
+
+}
+
+
+.day-card {
+
+    display: grid;
+
+    grid-template-columns: 90px 1fr auto;
+
+    gap: 20px;
+
+    align-items: center;
+
+    padding: 24px;
+
+    border-radius: 18px;
+
+    background:
+        rgba(20, 25, 42, 0.9);
+
+    border: 1px solid rgba(255,255,255,0.08);
+
+    transition: 0.25s ease;
+
+}
+
+
+.day-card:hover {
+
+    border-color:
+        rgba(245, 197, 66, 0.35);
+
+}
+
+
+.day-card.day-completed {
+
+    border-color:
+        rgba(66, 211, 146, 0.5);
+
+    background:
+        rgba(20, 50, 42, 0.55);
+
+}
+
+
+.day-number {
+
+    color: #f5c542;
+
+    font-weight: 800;
+
+    font-size: 14px;
+
+}
+
+
+.day-content h3 {
+
+    color: #ffffff;
+
+    margin: 0 0 10px;
+
+    font-size: 20px;
+
+}
+
+
+.day-content p {
+
+    color: #adb5c7;
+
+    line-height: 1.6;
+
+    margin: 7px 0;
+
+}
+
+
+.day-content strong {
+
+    color: #ffffff;
+
+}
+
+
+.day-check {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    color: #f5c542;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    white-space: nowrap;
+
+}
+
+
+.day-check input {
+
+    width: 19px;
+
+    height: 19px;
+
+    accent-color: #f5c542;
+
+    cursor: pointer;
+
+}
+
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 700px) {
+
+    .study-week-card {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 20px;
+
+    }
+
+
+    .week-card-right {
+
+        margin-left: 0;
+
+    }
+
+
+    .day-card {
+
+        grid-template-columns: 1fr;
+
+        gap: 12px;
+
+    }
+
+
+    .day-check {
+
+        justify-content: flex-start;
+
+    }
+
+
+    .week-detail-header h2 {
+
+        font-size: 25px;
+
+    }
+
+}
+
+/* ========================================
+   STEP 7 - PROJECT SYSTEM
+======================================== */
+
+#projects-section {
+    margin-top: 60px;
+    padding: 35px;
+    border-radius: 24px;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(14px);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+}
+
+
+/* ========================================
+   PROJECT SECTION TITLE
+======================================== */
+
+#projects-section > h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 30px;
+    letter-spacing: 0.5px;
+}
+
+
+/* ========================================
+   PROJECT PROGRESS
+======================================== */
+
+.project-progress {
+    margin-bottom: 35px;
+    padding: 24px;
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.07);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+
+.project-progress-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.project-progress-header h3 {
+    margin: 0 0 6px;
+    font-size: 20px;
+}
+
+
+.project-progress-header p {
+    margin: 0;
+    opacity: 0.75;
+    font-size: 14px;
+}
+
+
+#project-progress-percent {
+    font-size: 28px;
+}
+
+
+/* ========================================
+   PROJECT PROGRESS BAR
+======================================== */
+
+.project-progress-bar {
+    width: 100%;
+    height: 10px;
+    margin-top: 20px;
+    border-radius: 20px;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.12);
+}
+
+
+.project-progress-fill {
+    width: 0%;
+    height: 100%;
+    border-radius: 20px;
+    transition: width 0.5s ease;
+}
+
+
+/* ========================================
+   PROJECT CARDS CONTAINER
+======================================== */
+
+#projects-content {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+}
+
+
+/* ========================================
+   PROJECT CARD
+======================================== */
+
+.project-card {
+    position: relative;
+    padding: 28px;
+    min-height: 300px;
+
+    border-radius: 20px;
+
+    background: rgba(255, 255, 255, 0.07);
+
+    border: 1px solid rgba(255, 255, 255, 0.12);
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+
+    overflow: hidden;
+}
+
+
+/* Top glow line */
+
+.project-card::before {
+    content: "";
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 3px;
+
+    opacity: 0.7;
+}
+
+
+/* Hover */
+
+.project-card:hover {
+    transform: translateY(-6px);
+
+    border-color: rgba(255, 255, 255, 0.3);
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.25);
+}
+
+
+/* ========================================
+   PROJECT NUMBER
+======================================== */
+
+.project-number {
+    display: inline-block;
+
+    padding: 6px 12px;
+
+    margin-bottom: 15px;
+
+    border-radius: 20px;
+
+    font-size: 12px;
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    background: rgba(255, 255, 255, 0.09);
+
+    opacity: 0.8;
+}
+
+
+/* ========================================
+   PROJECT TITLE
+======================================== */
+
+.project-card h2 {
+    margin: 0 0 14px;
+
+    font-size: 22px;
+
+    line-height: 1.3;
+}
+
+
+/* ========================================
+   PROJECT DESCRIPTION
+======================================== */
+
+.project-card p {
+    line-height: 1.6;
+
+    font-size: 14px;
+
+    opacity: 0.78;
+
+    margin: 10px 0;
+}
+
+
+/* ========================================
+   SKILLS & OBJECTIVE
+======================================== */
+
+.project-card p strong {
+    opacity: 1;
+}
+
+
+/* ========================================
+   COMPLETE BUTTON
+======================================== */
+
+.complete-project {
+    margin-top: 18px;
+
+    width: 100%;
+
+    padding: 12px 18px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.2s ease,
+        opacity 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+.complete-project:hover {
+    transform: translateY(-2px);
+
+    opacity: 0.9;
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+/* ========================================
+   COMPLETED PROJECT
+======================================== */
+
+.project-card.completed {
+    border-color: rgba(100, 255, 170, 0.45);
+
+    background: rgba(100, 255, 170, 0.06);
+}
+
+
+.project-card.completed .project-number {
+    opacity: 1;
+}
+
+
+.project-card.completed .complete-project {
+    opacity: 0.85;
+}
+
+
+/* ========================================
+   RESPONSIVE DESIGN
+======================================== */
+
+@media (max-width: 800px) {
+
+    #projects-content {
+        grid-template-columns: 1fr;
+    }
+
+    #projects-section {
+        padding: 22px;
+    }
+
+    .project-card {
+        padding: 22px;
+    }
+
+    .project-progress-header {
+        align-items: flex-start;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .project-progress-header {
+        flex-direction: column;
+    }
+
+    #project-progress-percent {
+        font-size: 24px;
+    }
+
+    .project-card h2 {
+        font-size: 19px;
+    }
+
+}
+
+/* ========================================
+   STEP 8 - CAREER DASHBOARD
+======================================== */
+
+.dashboard-page {
+    min-height: 100vh;
+    padding: 100px 20px 60px;
+}
+
+
+.dashboard-container {
+    max-width: 900px;
+    margin: auto;
+}
+
+
+.dashboard-description {
+    color: #aeb4c7;
+    font-size: 18px;
+    margin-bottom: 35px;
+}
+
+
+.dashboard-career {
+    padding: 20px 25px;
+    border: 1px solid rgba(255, 210, 80, 0.3);
+    border-radius: 15px;
+    margin-bottom: 30px;
+    background: rgba(255, 255, 255, 0.03);
+}
+
+
+.dashboard-career span {
+    color: #aeb4c7;
+}
+
+
+.dashboard-career strong {
+    color: #ffd45c;
+    margin-left: 8px;
+}
+
+
+/* ========================================
+   OVERALL SCORE
+======================================== */
+
+.overall-progress {
+    text-align: center;
+    padding: 35px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+
+    background: rgba(255, 255, 255, 0.04);
+
+    border: 1px solid rgba(255, 210, 80, 0.2);
+}
+
+
+.overall-progress h2 {
+    margin-bottom: 15px;
+}
+
+
+.overall-number {
+    font-size: 55px;
+    font-weight: 800;
+    color: #ffd45c;
+}
+
+
+.overall-progress p {
+    color: #aeb4c7;
+}
+
+
+/* ========================================
+   BAR GRAPH
+======================================== */
+
+.progress-chart {
+    padding: 35px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.04);
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
+
+    margin-bottom: 30px;
+}
+
+
+.progress-chart h2 {
+    margin-bottom: 5px;
+}
+
+
+.chart-description {
+    color: #aeb4c7;
+    margin-bottom: 30px;
+}
+
+
+/* Individual bar */
+
+.bar-item {
+    margin-bottom: 25px;
+}
+
+
+.bar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 8px;
+}
+
+
+.bar-header span {
+    font-weight: 600;
+}
+
+
+.bar-header strong {
+    color: #ffd45c;
+}
+
+
+/* Bar background */
+
+.bar-background {
+    width: 100%;
+    height: 18px;
+
+    background: #1b1e2b;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+}
+
+
+/* Actual progress */
+
+.bar-fill {
+    height: 100%;
+
+    width: 0%;
+
+    border-radius: 20px;
+
+    background: linear-gradient(
+        90deg,
+        #ffd45c,
+        #ff9f43
+    );
+
+    transition: width 1s ease;
+}
+
+
+/* ========================================
+   READINESS CARD
+======================================== */
+
+.readiness-card {
+    text-align: center;
+
+    padding: 35px;
+
+    border-radius: 20px;
+
+    background: rgba(255, 255, 255, 0.04);
+
+    border: 1px solid rgba(255, 210, 80, 0.2);
+
+    margin-bottom: 30px;
+}
+
+
+.readiness-card h3 {
+    font-size: 28px;
+
+    color: #ffd45c;
+
+    margin: 15px 0;
+}
+
+
+.readiness-card p {
+    color: #aeb4c7;
+}
+
+/* =====================================================
+   STEP 5 - PROJECT CTA
+   ===================================================== */
+
+.project-cta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    padding: 14px 28px;
+
+    margin-top: 24px;
+
+    border: 1px solid rgba(255, 193, 7, 0.45);
+    border-radius: 12px;
+
+    background: linear-gradient(
+        135deg,
+        #ffc107,
+        #f5b82e
+    );
+
+    color: #080b18;
+
+    font-size: 16px;
+    font-weight: 700;
+
+    text-decoration: none;
+
+    box-shadow:
+        0 8px 25px rgba(255, 193, 7, 0.18);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        border-color 0.25s ease;
+}
+
+
+/* HOVER */
+
+.project-cta:hover {
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 12px 30px rgba(255, 193, 7, 0.30);
+
+    border-color: #ffc107;
+
+}
+
+
+/* CLICK */
+
+.project-cta:active {
+
+    transform: translateY(0);
+
+}
+
+/* =====================================================
+   PROJECT COMPLETION NAVIGATION
+   ===================================================== */
+
+.project-navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+    margin-top: 28px;
+    flex-wrap: wrap;
+}
+
+
+/* BOTH BUTTONS */
+
+.project-nav {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 13px 24px;
+
+    border-radius: 12px;
+
+    font-size: 15px;
+    font-weight: 700;
+
+    text-decoration: none;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        background 0.25s ease,
+        border-color 0.25s ease;
+}
+
+
+/* BACK BUTTON */
+
+.project-nav.secondary {
+
+    background: rgba(255, 255, 255, 0.04);
+
+    color: #f5f5f5;
+
+    border: 1px solid rgba(255, 193, 7, 0.35);
+
+}
+
+
+/* INTERVIEW BUTTON */
+
+.project-nav.primary {
+
+    background: linear-gradient(
+        135deg,
+        #ffc107,
+        #f5b82e
+    );
+
+    color: #080b18;
+
+    border: 1px solid #ffc107;
+
+    box-shadow:
+        0 8px 25px rgba(255, 193, 7, 0.18);
+
+}
+
+
+/* HOVER */
+
+.project-nav:hover {
+
+    transform: translateY(-3px);
+
+}
+
+
+/* PRIMARY HOVER */
+
+.project-nav.primary:hover {
+
+    box-shadow:
+        0 12px 30px rgba(255, 193, 7, 0.30);
+
+}
+
+
+/* SECONDARY HOVER */
+
+.project-nav.secondary:hover {
+
+    background: rgba(255, 193, 7, 0.08);
+
+    border-color: #ffc107;
+
+}

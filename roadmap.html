@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Your Career Roadmap | CareerPath AI</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- ========================================
+         HEADER
+    ========================================= -->
+
+    <header>
+
+        <div class="logo">
+            CareerPath AI
+        </div>
+
+
+        <nav>
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="career.html">
+                Careers
+            </a>
+
+            <a href="#">
+                About
+            </a>
+
+        </nav>
+
+
+        <button class="login-btn">
+            Get Started
+        </button>
+
+    </header>
+
+
+
+    <!-- ========================================
+         MAIN ROADMAP PAGE
+    ========================================= -->
+
+    <main class="roadmap-page">
+
+
+        <section class="roadmap-container">
+
+
+            <!-- STEP -->
+
+            <p class="tagline">
+                🗺️ Step 4 of 4
+            </p>
+
+
+
+            <!-- TITLE -->
+
+            <h1>
+                Your Personalized Roadmap
+            </h1>
+
+
+            <p class="roadmap-description">
+
+                Follow this roadmap to build the skills
+                needed for your chosen career.
+
+            </p>
+
+
+
+            <!-- CAREER -->
+
+            <div class="roadmap-career">
+
+                <span>
+                    Your Career:
+                </span>
+
+                <strong id="roadmap-career">
+                    Loading...
+                </strong>
+
+            </div>
+
+
+
+            <!-- ========================================
+                 ROADMAP CONTENT
+            ========================================= -->
+
+           <div id="skill-gap">
+
+            </div>
+
+
+          <div id="roadmap-content">
+
+             <!-- JavaScript will generate the roadmap here -->
+
+        </div>
+
+
+
+            <!-- ========================================
+                 COMPLETION MESSAGE
+            ========================================= -->
+
+            <div class="roadmap-complete">
+
+                <h2>
+                    🚀 Keep Building Your Skills!
+                </h2>
+
+                <p>
+                    Stay consistent, practice regularly,
+                    and complete projects to reach your career goal.
+                </p>
+
+            </div>
+
+
+
+            <!-- ========================================
+                 START BUTTON
+            ========================================= -->
+
+            <div class="roadmap-actions">
+
+                <button
+                    class="continue-btn"
+                    id="start-roadmap">
+
+                    Start My Journey →
+
+                </button>
+
+            </div>
+
+
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+<script>
+    // Mark Roadmap as completed
+    localStorage.setItem(
+        "roadmapCompleted",
+        "true"
+    );
+</script>
+
+</body>
+
+</html>

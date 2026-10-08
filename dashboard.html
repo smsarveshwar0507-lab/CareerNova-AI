@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Career Dashboard | CareerPath AI</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+    <!-- ========================================
+         HEADER
+    ========================================= -->
+
+    <header>
+
+        <div class="logo">
+            CareerPath AI ✦
+        </div>
+
+        <nav>
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="career.html">
+                Careers
+            </a>
+
+            <a href="#">
+                About
+            </a>
+
+        </nav>
+
+        <button class="login-btn">
+            Get Started
+        </button>
+
+    </header>
+
+
+    <!-- ========================================
+         STEP 8 DASHBOARD
+    ========================================= -->
+
+    <main class="dashboard-page">
+
+        <section class="dashboard-container">
+
+
+            <!-- STEP -->
+
+            <p class="tagline">
+                🎯 Step 8 of 8
+            </p>
+
+
+            <!-- TITLE -->
+
+            <h1>
+                Career Readiness Dashboard
+            </h1>
+
+
+            <p class="dashboard-description">
+
+                Track your progress and see how prepared
+                you are for your chosen career.
+
+            </p>
+
+
+            <!-- CAREER -->
+
+            <div class="dashboard-career">
+
+                <span>
+                    Your Career:
+                </span>
+
+                <strong id="dashboard-career">
+                    Loading...
+                </strong>
+
+            </div>
+
+
+            <!-- ========================================
+                 OVERALL SCORE
+            ========================================= -->
+
+            <div class="overall-progress">
+
+                <h2>
+                    🏆 Overall Career Readiness
+                </h2>
+
+                <div class="overall-number"
+                     id="overall-score">
+
+                    0%
+
+                </div>
+
+                <p id="readiness-message">
+
+                    Complete the sections to become
+                    career ready.
+
+                </p>
+
+            </div>
+
+
+            <!-- ========================================
+                 BAR GRAPH
+            ========================================= -->
+
+            <div class="progress-chart">
+
+                <h2>
+                    📊 Your Progress
+                </h2>
+
+                <p class="chart-description">
+
+                    Your performance across each
+                    CareerPath AI section.
+
+                </p>
+
+
+                <!-- ASSESSMENT -->
+
+                <div class="bar-item">
+
+                    <div class="bar-header">
+
+                        <span>
+                            📝 Career Assessment
+                        </span>
+
+                        <strong id="assessment-value">
+                            0%
+                        </strong>
+
+                    </div>
+
+                    <div class="bar-background">
+
+                        <div
+                            id="assessment-bar"
+                            class="bar-fill">
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ROADMAP -->
+
+                <div class="bar-item">
+
+                    <div class="bar-header">
+
+                        <span>
+                            🗺️ Career Roadmap
+                        </span>
+
+                        <strong id="roadmap-value">
+                            0%
+                        </strong>
+
+                    </div>
+
+                    <div class="bar-background">
+
+                        <div
+                            id="roadmap-bar"
+                            class="bar-fill">
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- STUDY PLANNER -->
+
+                <div class="bar-item">
+
+                    <div class="bar-header">
+
+                        <span>
+                            📚 Study Planner
+                        </span>
+
+                        <strong id="planner-value">
+                            0%
+                        </strong>
+
+                    </div>
+
+                    <div class="bar-background">
+
+                        <div
+                            id="planner-bar"
+                            class="bar-fill">
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PROJECTS -->
+
+                <div class="bar-item">
+
+                    <div class="bar-header">
+
+                        <span>
+                            🚀 Projects
+                        </span>
+
+                        <strong id="projects-value">
+                            0%
+                        </strong>
+
+                    </div>
+
+                    <div class="bar-background">
+
+                        <div
+                            id="projects-bar"
+                            class="bar-fill">
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- INTERVIEW -->
+
+                <div class="bar-item">
+
+                    <div class="bar-header">
+
+                        <span>
+                            🤖 AI Interview
+                        </span>
+
+                        <strong id="interview-value">
+                            0%
+                        </strong>
+
+                    </div>
+
+                    <div class="bar-background">
+
+                        <div
+                            id="interview-bar"
+                            class="bar-fill">
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ========================================
+                 FINAL STATUS
+            ========================================= -->
+
+            <div class="readiness-card">
+
+                <h2>
+                    🎯 Career Readiness Status
+                </h2>
+
+                <h3 id="readiness-status">
+                    Getting Started
+                </h3>
+
+                <p id="readiness-description">
+
+                    Start completing your CareerPath AI
+                    journey to improve your readiness.
+
+                </p>
+
+            </div>
+
+
+            <!-- ========================================
+                 BACK BUTTON
+            ========================================= -->
+
+            <button
+                class="continue-btn"
+                onclick="window.location.href='interview.html'">
+
+                ← Back to Interview
+
+            </button>
+
+
+        </section>
+
+    </main>
+
+
+    <script src="dashboard.js"></script>
+
+</body>
+
+</html>

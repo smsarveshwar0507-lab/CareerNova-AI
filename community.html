@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Nearby Students | CareerPath AI</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+/>
+
+</head>
+
+
+<body>
+
+    <header>
+
+        <div class="logo">
+            CareerPath AI
+        </div>
+
+        <nav>
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="career.html">
+                Careers
+            </a>
+
+            <a href="#">
+                About
+            </a>
+
+        </nav>
+
+        <button class="login-btn">
+            Get Started
+        </button>
+
+    </header>
+
+
+    <main class="roadmap-page">
+
+        <section class="roadmap-container">
+
+            <p class="tagline">
+                🗺️ Step 7 of 7
+            </p>
+
+            <h1>
+                Students Near You
+            </h1>
+
+            <p class="roadmap-description">
+
+                Discover students who are learning
+                similar skills and pursuing similar careers.
+
+            </p>
+
+
+            <!-- MAP WILL COME HERE -->
+
+            <div id="student-map">
+                 👥 <strong>100 Students</strong>
+                 are currently learning near you
+
+            </div>
+
+
+           <div id="student-map">
+
+
+            </div>
+
+
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+    <script src="script.js"></script>
+
+<script
+    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js">
+</script>
+
+<script>
+
+    const map = L.map("student-map").setView(
+        [13.0827, 80.2707],
+        13
+    );
+
+    L.tileLayer(
+        "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+        {
+            attribution:
+                '&copy; OpenStreetMap contributors'
+        }
+    ).addTo(map);
+
+    // ========================================
+// 100 SAMPLE STUDENTS
+// ========================================
+
+const careers = [
+    "AI/ML Engineer",
+    "Data Scientist",
+    "Data Analyst",
+    "Software Developer",
+    "Web Developer",
+    "Cybersecurity Analyst",
+    "Cloud Engineer",
+    "Mobile App Developer"
+];
+
+const skills = [
+    "Python, Machine Learning",
+    "Python, SQL, Data Analysis",
+    "SQL, Excel, Power BI",
+    "Java, C++, DSA",
+    "HTML, CSS, JavaScript",
+    "Python, Networking, Security",
+    "AWS, Python, Linux",
+    "Java, Flutter, Firebase"
+];
+
+
+// Create 100 demo students
+
+for (let i = 1; i <= 100; i++) {
+
+    // Generate location around Chennai
+
+    const lat =
+        13.0827 +
+        (Math.random() - 0.5) * 0.08;
+
+    const lng =
+        80.2707 +
+        (Math.random() - 0.5) * 0.08;
+
+
+    // Select random career
+
+    const careerIndex =
+        Math.floor(
+            Math.random() * careers.length
+        );
+
+
+    // Create marker
+
+    const marker =
+        L.marker([lat, lng])
+        .addTo(map);
+
+
+    // Popup information
+
+    marker.bindPopup(`
+
+        <div style="min-width: 200px;">
+
+            <h3>
+                👨‍🎓 Student ${i}
+            </h3>
+
+            <p>
+                <strong>🎯 Career:</strong><br>
+                ${careers[careerIndex]}
+            </p>
+
+            <p>
+                <strong>📚 Skills:</strong><br>
+                ${skills[careerIndex]}
+            </p>
+
+            <p>
+                <strong>📍 Location:</strong><br>
+                Near Chennai
+            </p>
+
+        </div>
+
+    `);
+
+}
+
+
+</script>
+
+</body>
+
+
+
+</html>

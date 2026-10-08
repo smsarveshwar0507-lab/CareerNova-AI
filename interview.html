@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Interview | CareerPath AI</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+
+        <div class="logo">
+            CareerPath AI
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="career.html">Careers</a>
+            <a href="#">About</a>
+        </nav>
+
+        <button class="login-btn">
+            Get Started
+        </button>
+
+    </header>
+
+
+    <!-- AI INTERVIEW -->
+    <main class="roadmap-page">
+
+        <section class="roadmap-container">
+
+            <p class="tagline">
+                🤖 Step 7 of 8
+            </p>
+
+            <h1>
+                AI Career Interview
+            </h1>
+
+            <p class="roadmap-description">
+                Attend a simulated AI interview and receive feedback on your answers.
+            </p>
+
+
+            <!-- CAREER -->
+            <div class="roadmap-career">
+
+                <span>
+                    Interview For:
+                </span>
+
+                <strong id="interview-career">
+                    Loading...
+                </strong>
+
+            </div>
+
+
+            <!-- INTERVIEW AREA -->
+            <div id="interview-container">
+
+                <div class="ai-interview-box">
+
+                    <!-- INTERVIEW HEADER -->
+                    <div class="interview-header">
+
+                        <span class="ai-badge">
+                            🤖 AI INTERVIEWER
+                        </span>
+
+                        <span id="question-count">
+                            Question 1 / 5
+                        </span>
+
+                    </div>
+
+
+                    <!-- QUESTION -->
+                    <div class="ai-question">
+
+                        <div class="ai-avatar">
+                            🤖
+                        </div>
+
+                        <div>
+
+                            <span>
+                                AI Interviewer
+                            </span>
+
+                            <h2 id="interview-question">
+                                Click Start Interview to begin.
+                            </h2>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- SPEECH AREA -->
+                    <div class="speech-area">
+
+                        <button
+                            id="start-interview"
+                            class="continue-btn">
+                            🎤 Start Interview
+                        </button>
+
+
+                        <button
+                            id="speak-answer"
+                            class="continue-btn"
+                            style="display: none;">
+                            🎙️ Start Speaking
+                        </button>
+
+
+                        <button
+                            id="finish-answer"
+                            class="continue-btn"
+                            style="display: none;">
+                            ✅ Finish Answer
+                        </button>
+
+
+                        <p id="speech-status">
+                            Click Start Interview to begin.
+                        </p>
+
+                    </div>
+
+
+                    <!-- USER ANSWER -->
+                    <div class="answer-box">
+
+                        <h3>
+                            Your Answer
+                        </h3>
+
+                        <textarea
+                            id="user-answer"
+                            placeholder="Your spoken answer will appear here..."
+                            readonly>
+                        </textarea>
+
+                    </div>
+
+
+                    <!-- FEEDBACK -->
+                    <div
+                        id="interview-feedback"
+                        style="display: none;">
+
+                        <h3>
+                            📊 AI Feedback
+                        </h3>
+
+                        <p id="feedback-text"></p>
+
+                        <strong id="answer-score">
+                            Score: 0/10
+                        </strong>
+
+                    </div>
+
+
+                    <!-- NEXT QUESTION -->
+                    <button
+                        id="next-question"
+                        class="continue-btn"
+                        style="display: none;">
+
+                        Next Question →
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- JAVASCRIPT -->
+     <script src="interview.js"></script>
+   
+
+</body>
+
+</html>

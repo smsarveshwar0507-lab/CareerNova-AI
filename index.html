@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>CareerNova AI</title>
+
+
+    <!-- MAIN CSS -->
+
+    <link rel="stylesheet"
+          href="style.css">
+
+
+    <!-- LEAFLET MAP CSS -->
+
+    <link
+        rel="stylesheet"
+        href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         HEADER
+         ===================================================== -->
+
+    <header>
+
+        <div class="logo">
+            CareerNova AI
+        </div>
+
+
+        <nav>
+
+            <!-- HOME -->
+
+            <a href="index.html">
+                Home
+            </a>
+
+
+            <!-- HOW IT WORKS -->
+
+            <a href="#how-it-works">
+                How It Works
+            </a>
+
+
+            <!-- CAREERS -->
+
+            <a href="career.html">
+                Careers
+            </a>
+
+
+            <!-- STUDENT COMMUNITY -->
+
+            <a href="#student-community">
+                Student Community
+            </a>
+
+
+            <!-- ABOUT -->
+
+            <a href="#about">
+                About
+            </a>
+
+        </nav>
+
+
+        <!-- GET STARTED -->
+
+        <button
+            class="login-btn"
+            onclick="window.location.href='career.html'">
+
+            Get Started
+
+        </button>
+
+    </header>
+
+
+
+    <!-- =====================================================
+         MAIN CONTENT
+         ===================================================== -->
+
+    <main>
+
+
+        <!-- =================================================
+             HERO SECTION
+             ================================================= -->
+
+        <section
+            class="hero"
+            id="home">
+
+
+            <!-- LEFT SIDE -->
+
+            <div class="hero-content">
+
+
+                <p class="tagline">
+                    🚀 Build Your Future With AI
+                </p>
+
+
+                <h1>
+
+                    Discover Your Career Path.
+
+                    <span>
+                        Build Your Skills.
+                    </span>
+
+                </h1>
+
+
+                <p class="description">
+
+                    Tell us the career you want, assess your
+                    current skills, and get a personalized
+                    roadmap to reach your goal.
+
+                </p>
+
+
+                <div class="hero-buttons">
+
+
+                    <!-- START JOURNEY -->
+
+                    <a
+                        href="career.html"
+                        class="primary-btn">
+
+                        Start Your Journey
+
+                    </a>
+
+
+                    <!-- EXPLORE CAREERS -->
+
+                    <a
+                        href="career.html"
+                        class="secondary-btn">
+
+                        Explore Careers
+
+                    </a>
+
+
+                </div>
+
+            </div>
+
+
+
+            <!-- RIGHT SIDE -->
+
+            <div class="hero-card">
+
+
+                <h3>
+                    Your Career Roadmap
+                </h3>
+
+
+                <div class="roadmap-item">
+
+                    <span>
+                        01
+                    </span>
+
+                    <p>
+                        Choose Career
+                    </p>
+
+                </div>
+
+
+                <div class="roadmap-item">
+
+                    <span>
+                        02
+                    </span>
+
+                    <p>
+                        Assess Skills
+                    </p>
+
+                </div>
+
+
+                <div class="roadmap-item">
+
+                    <span>
+                        03
+                    </span>
+
+                    <p>
+                        Find Skill Gaps
+                    </p>
+
+                </div>
+
+
+                <div class="roadmap-item">
+
+                    <span>
+                        04
+                    </span>
+
+                    <p>
+                        Follow Your Roadmap
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             HOW IT WORKS
+             ================================================= -->
+
+        <section
+            id="how-it-works"
+            class="home-section">
+
+
+            <div class="section-heading">
+
+
+                <p class="tagline">
+                    ⚡ Simple & Powerful
+                </p>
+
+
+                <h2>
+                    How CareerPath AI Works
+                </h2>
+
+
+                <p>
+
+                    Follow a simple step-by-step process
+                    to discover and prepare for your
+                    future career.
+
+                </p>
+
+            </div>
+
+
+
+            <div class="steps-grid">
+
+
+                <div class="step-card">
+
+                    <span>
+                        01
+                    </span>
+
+                    <h3>
+                        Choose Your Career
+                    </h3>
+
+                    <p>
+
+                        Select the career you are interested
+                        in and begin your personalized journey.
+
+                    </p>
+
+                </div>
+
+
+
+                <div class="step-card">
+
+                    <span>
+                        02
+                    </span>
+
+                    <h3>
+                        Assess Your Skills
+                    </h3>
+
+                    <p>
+
+                        Take an assessment to understand
+                        your current skills and knowledge.
+
+                    </p>
+
+                </div>
+
+
+
+                <div class="step-card">
+
+                    <span>
+                        03
+                    </span>
+
+                    <h3>
+                        Follow Your Roadmap
+                    </h3>
+
+                    <p>
+
+                        Get a structured learning roadmap
+                        based on your selected career.
+
+                    </p>
+
+                </div>
+
+
+
+                <div class="step-card">
+
+                    <span>
+                        04
+                    </span>
+
+                    <h3>
+                        Become Career Ready
+                    </h3>
+
+                    <p>
+
+                        Complete projects, prepare for
+                        interviews and track your progress.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             STUDENT COMMUNITY
+             ================================================= -->
+
+        <section
+            id="student-community"
+            class="home-section community-section">
+
+
+            <div class="section-heading">
+
+
+                <p class="tagline">
+                    🌎 Learn Together
+                </p>
+
+
+                <h2>
+                    Student Community
+                </h2>
+
+
+                <p>
+
+                    Connect with students who are learning,
+                    building projects and preparing for
+                    similar careers.
+
+                </p>
+
+            </div>
+
+
+
+            <!-- COMMUNITY CONTROLS -->
+
+            <div class="community-controls">
+
+
+                <input
+                    type="text"
+                    id="student-search"
+                    placeholder="🔍 Search student or city..."
+                >
+
+
+                <select id="career-filter">
+
+                    <option value="all">
+                        All Careers
+                    </option>
+
+                    <option value="AI/ML">
+                        AI / ML
+                    </option>
+
+                    <option value="Data Science">
+                        Data Science
+                    </option>
+
+                    <option value="Web Development">
+                        Web Development
+                    </option>
+
+                    <option value="Cybersecurity">
+                        Cybersecurity
+                    </option>
+
+                    <option value="Software Development">
+                        Software Development
+                    </option>
+
+                </select>
+
+
+                <button
+                    id="locate-btn"
+                    class="continue-btn">
+
+                    📍 Find My Location
+
+                </button>
+
+            </div>
+
+
+
+            <!-- STUDENT COUNT -->
+
+            <div class="community-count">
+
+                <strong id="nearby-count">
+                    0
+                </strong>
+
+                <span>
+                    students found
+                </span>
+
+            </div>
+
+
+
+            <!-- MAP -->
+
+            <div
+                id="student-map"
+                style="
+                    width:100%;
+                    height:500px;
+                    border-radius:20px;
+                    overflow:hidden;
+                    margin-top:30px;
+                ">
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             ABOUT
+             ================================================= -->
+
+        <section
+            id="about"
+            class="home-section">
+
+
+            <div class="section-heading">
+
+
+                <p class="tagline">
+                    ✨ About CareerPath AI
+                </p>
+
+
+                <h2>
+                    Build Your Future With Confidence
+                </h2>
+
+
+                <p>
+
+                    CareerPath AI helps students discover
+                    suitable career paths, understand their
+                    skill gaps, follow structured roadmaps,
+                    build projects and prepare for interviews.
+
+                </p>
+
+            </div>
+
+
+
+            <div class="about-content">
+
+
+                <div class="step-card">
+
+                    <h3>
+                        🎯 Personalized Career Guidance
+                    </h3>
+
+                    <p>
+
+                        Choose a career and receive a structured
+                        learning path designed around your goals.
+
+                    </p>
+
+                </div>
+
+
+
+                <div class="step-card">
+
+                    <h3>
+                        📚 Skill Development
+                    </h3>
+
+                    <p>
+
+                        Understand what skills you need and
+                        progressively build your knowledge.
+
+                    </p>
+
+                </div>
+
+
+
+                <div class="step-card">
+
+                    <h3>
+                        🤖 AI Interview
+                    </h3>
+
+                    <p>
+
+                        Practice interview questions and receive
+                        feedback on your performance.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- =====================================================
+         LEAFLET MAP JAVASCRIPT
+         ===================================================== -->
+
+    <script
+        src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js">
+    </script>
+
+
+
+    <!-- =====================================================
+         YOUR MAIN JAVASCRIPT
+         ===================================================== -->
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>

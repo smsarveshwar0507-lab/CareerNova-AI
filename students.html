@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Student Community | CareerPath AI</title>
+
+    <link rel="stylesheet"
+          href="style.css">
+
+    <!-- Leaflet Map -->
+    <link
+        rel="stylesheet"
+        href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<!-- ============================= -->
+<!-- HEADER -->
+<!-- ============================= -->
+
+<header>
+
+    <div class="logo">
+        CareerPath AI ✦
+    </div>
+
+    <nav>
+
+        <a href="index.html">
+            Home
+        </a>
+
+        <a href="career.html">
+            Careers
+        </a>
+
+        <a href="students.html" class="active">
+        Student Community
+    </a>
+
+    </nav>
+
+    <button class="login-btn">
+        Get Started
+    </button>
+
+</header>
+
+
+
+<!-- ============================= -->
+<!-- STUDENT COMMUNITY -->
+<!-- ============================= -->
+
+<main class="students-page">
+
+    <section class="students-container">
+
+
+        <p class="tagline">
+    👥 COMMUNITY
+</p>
+
+
+        <!-- TITLE -->
+
+        <h1>
+            Connect With Students
+        </h1>
+
+
+        <p class="students-description">
+
+            Discover students learning similar skills
+            and careers around you and across the world.
+
+        </p>
+
+
+
+        <!-- ============================= -->
+        <!-- STATS -->
+        <!-- ============================= -->
+
+        <div class="student-stats">
+
+            <div class="student-stat">
+
+                <strong>
+                    1,000+
+                </strong>
+
+                <span>
+                    Students in India
+                </span>
+
+            </div>
+
+
+            <div class="student-stat">
+
+                <strong>
+                    100+
+                </strong>
+
+                <span>
+                    Students Worldwide
+                </span>
+
+            </div>
+
+
+            <div class="student-stat">
+
+                <strong id="nearby-count">
+                    Finding...
+                </strong>
+
+                <span>
+                    Near You
+                </span>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- ============================= -->
+        <!-- FILTERS -->
+        <!-- ============================= -->
+
+        <div class="student-filters">
+
+            <input
+                type="text"
+                id="student-search"
+                placeholder="🔍 Search career or skill..."
+            >
+
+
+            <select id="career-filter">
+
+                <option value="all">
+                    All Careers
+                </option>
+
+                <option value="AI/ML">
+                    AI / ML
+                </option>
+
+                <option value="Data Science">
+                    Data Science
+                </option>
+
+                <option value="Web Development">
+                    Web Development
+                </option>
+
+                <option value="Cybersecurity">
+                    Cybersecurity
+                </option>
+
+                <option value="Software Development">
+                    Software Development
+                </option>
+
+            </select>
+
+
+            <button id="locate-btn">
+                📍 Find Me
+            </button>
+
+        </div>
+
+
+
+        <!-- ============================= -->
+        <!-- MAP -->
+        <!-- ============================= -->
+
+        <div class="student-map-card">
+
+            <div class="map-header">
+
+                <div>
+
+                    <h2>
+                        Student Network
+                    </h2>
+
+                    <p>
+                        Explore learners around you
+                    </p>
+
+                </div>
+
+
+                <div class="map-status">
+
+                    <span class="status-dot"></span>
+
+                    Live Location
+
+                </div>
+
+            </div>
+
+
+            <div id="student-map"></div>
+
+        </div>
+
+
+
+        <!-- ============================= -->
+        <!-- MAP INFO -->
+        <!-- ============================= -->
+
+        <div class="community-info">
+
+            <div>
+
+                <span>📍</span>
+
+                <div>
+
+                    <strong>
+                        Students Near You
+                    </strong>
+
+                    <p>
+                        Find learners studying similar
+                        careers and skills.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div>
+
+                <span>🌎</span>
+
+                <div>
+
+                    <strong>
+                        Global Community
+                    </strong>
+
+                    <p>
+                        Connect with students
+                        from different countries.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div>
+
+                <span>🤝</span>
+
+                <div>
+
+                    <strong>
+                        Learn Together
+                    </strong>
+
+                    <p>
+                        Share knowledge, collaborate
+                        and grow together.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- ============================= -->
+        <!-- FOOTER MESSAGE -->
+        <!-- ============================= -->
+
+        <div class="community-ready">
+
+            <h2>
+                🚀 Your Career Journey Doesn't Have
+                To Be Alone
+            </h2>
+
+            <p>
+                Find students with similar goals,
+                connect with them and learn together.
+            </p>
+
+        </div>
+
+
+    </section>
+
+</main>
+
+
+
+<!-- Leaflet -->
+
+<script
+    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js">
+</script>
+
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>
